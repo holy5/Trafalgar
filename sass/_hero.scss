@@ -1,0 +1,25 @@
+.hero {
+    margin-bottom: 190px;
+    &-main {
+        display: flex;
+        align-items: center;
+    }
+    &-content {
+        width: 100%;
+        max-width: 445px;
+        margin-right: 109px;
+    }
+    &-heading {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 117%;
+        margin-bottom: 25px;
+        color: $black-color;
+    }
+    &-desc {
+        font-size: 21px;
+        font-weight: 300;
+        line-height: 152%;
+        margin-bottom: 45px;
+    }
+}

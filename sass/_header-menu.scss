@@ -1,0 +1,14 @@
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 0 40px;
+    &-link {
+        color: $gray-color;
+        font-size: 18px;
+        transition: all 0.2 linear;
+    }
+    &-link:hover {
+        color: $black-color;
+        font-weight: 700;
+    }
+}
