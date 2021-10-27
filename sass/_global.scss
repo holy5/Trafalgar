@@ -41,6 +41,28 @@
     }
 }
 
+@media screen and (max-width: 1023px) {
+    .global-heading {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .btn {
+        width: 150px;
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        font-size: 12px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        &--primary {
+            border: 1.2px solid $primary-color;
+        }
+    }
+}
+
 .global-heading {
     font-size: 36px;
     line-height: 156%;

@@ -3,6 +3,7 @@
     &-main {
         display: flex;
         align-items: center;
+        gap: 34px;
     }
     &-content {
         width: 100%;
@@ -21,5 +22,35 @@
         font-weight: 300;
         line-height: 152%;
         margin-bottom: 45px;
+    }
+    @media screen and (max-width: 1023px) {
+        margin-bottom: 180px;
+        &-heading {
+            font-size: 35px;
+        }
+        &-desc {
+            font-size: 18px;
+        }
+        &-content {
+            margin-right: 60px;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        margin-bottom: 70px;
+        &-main {
+            flex-direction: column;
+            row-gap: 40px;
+        }
+        &-content {
+            margin-right: 0;
+        }
+        &-heading {
+            font-size: 30px;
+            text-align: center;
+        }
+        &-desc {
+            margin-bottom: 30px;
+            text-align: center;
+        }
     }
 }
