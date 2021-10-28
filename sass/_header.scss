@@ -5,6 +5,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    li {
+      list-style: none;
+    }
   }
   @media screen and (max-width: 1023px) {
     margin-bottom: 80px;

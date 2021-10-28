@@ -1,5 +1,7 @@
 .review {
-  margin-bottom: 216px;
+  padding-bottom: 80px;
+  position: relative;
+  margin-bottom: 200px;
   &-title {
     position: relative;
     text-align: center;
@@ -23,8 +25,11 @@
     border-radius: 24px;
     color: $white-color;
   }
+  &-list.slick-slider {
+    position: unset;
+  }
   &-content {
-    display: grid;
+    display: grid !important;
     grid-template-columns: 1fr 1fr;
     grid-gap: 0 30px;
     color: $white-color;
@@ -58,10 +63,49 @@
     line-height: 185%;
     font-weight: 400;
   }
+  .slick-dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-42%, -70%);
+    list-style: none;
+    display: flex !important;
+    align-items: center;
+    gap: 0 18px;
+    .slick-active button {
+      opacity: 1;
+    }
+    button {
+      width: 10px;
+      height: 10px;
+      border-radius: 100rem;
+      background-color: $primary-color;
+      font-size: 0;
+      outline: none;
+      border: 0;
+      opacity: 0.5;
+    }
+  }
+  .slick-arrow {
+    position: absolute;
+    bottom: 0;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: $primary-color;
+    font-size: 30px;
+    left: 50%;
+  }
+  .slick-next {
+    transform: translateX(120px);
+  }
+  .slick-prev {
+    transform: translateX(-120px);
+  }
   @media screen and (max-width: 1023px) {
     margin-bottom: 100px;
     &-main {
-      padding: 40px 20px;
+      padding: 40px 30px;
     }
     &-customer {
       &-name {
