@@ -1,5 +1,11 @@
 .feature {
   margin-bottom: 266px;
+  position: relative;
+  &-dots {
+    right: 0;
+    top: 50%;
+    transform: translate(175%, -50%);
+  }
   &-item {
     display: flex;
     justify-content: space-between;
@@ -49,7 +55,7 @@
       }
     }
   }
-  @media screen and (max-width: 1023px) {
+  @media screen and (max-width: 1023px) and(min-width: 768px) {
     margin-bottom: 100px;
     &-item + .feature-item {
       margin-top: 50px;
@@ -60,6 +66,9 @@
   }
   @media screen and (max-width: 767px) {
     margin-bottom: 80px;
+    &-item + .feature-item {
+      margin-top: 50px;
+    }
     &-item {
       flex-direction: column;
     }

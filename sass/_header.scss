@@ -1,13 +1,17 @@
 .header {
+  margin-bottom: 80px;
+  padding-top: 56px;
+  &-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @media screen and (max-width: 1023px) {
     margin-bottom: 80px;
-    padding-top: 56px;
-    &-main {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    @media screen and (max-width: 1023px) {
-        margin-bottom: 80px;
-        padding-top: 30px;
-    }
+    padding-top: 30px;
+  }
+  &-dots {
+    left: 0;
+    transform: translate(-10%, 100px);
+  }
 }
